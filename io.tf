@@ -30,8 +30,8 @@ variable "etcd-ips" { default = "10.0.10.10,10.0.10.11,10.0.10.12" }
 variable "instance-type" {
   default = {
     bastion = "t2.nano"
-    etcd = "m3.medium"
-    worker = "m3.medium"
+    etcd = "t2.micro"
+    worker = "t2.small"
   }
 }
 variable "internal-tld" {}
